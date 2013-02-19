@@ -28,7 +28,7 @@ module.exports = function(ctx, cb) {
     language:"python",
     framework:"django",
     prepare:CREATE_VIRTUAL_ENV,
-    test:VIRTUAL_PYTHON + " manage.py harvest",
+    test:VIRTUAL_PYTHON + " manage.py harvest --no-server",
   })
 
   ctx.addDetectionRule({
